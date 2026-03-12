@@ -6,7 +6,134 @@
     <meta name="author" content="Шмагайло Марія Євгеніївна">
     <title>Колекції - Картинна Галерея</title>
 </head>
-<body>
-    <h1>Колекції</h1>
+
+<!-- Кольори сторінки через атрибути body -->
+<body bgcolor="#faf7f2" text="#3a2a1e" link="#7a4f3a" vlink="#5c3d2e" alink="#c9a84c">
+
+<!-- Головний заголовок -->
+<h1>Колекції</h1>
+<hr>
+
+<!-- Навігаційне меню; поточна сторінка виділена <b> -->
+<p>
+    <a href="index.html">Головна</a> |
+    <a href="artists.html">Художники</a> |
+    <a href="collections.html"><b>Колекції</b></a> |
+    <a href="contacts.html">Контакти</a>
+</p>
+<hr>
+
+<!-- Текстові абзаци з форматуванням -->
+<p>
+    Наша галерея налічує <b>понад 500 творів мистецтва</b>, розподілених по тематичних колекціях.
+    Кожна колекція об'єднує твори певного напряму або епохи, дозволяючи відвідувачам
+    <i>поглиблено ознайомитись</i> із конкретним художнім стилем.
+</p>
+<p>
+    Серед постійних виставок &#8212; <b>«Класики Відродження»</b>, <i>«Світло імпресіонізму»</i>
+    та <b>«Сучасний погляд»</b>. Тимчасові виставки відбуваються щоквартально.
+    Більше інформації: <a href="https://www.louvre.fr" target="_blank">сайт Лувру (партнер)</a>.
+    Повернутись на <a href="index.html">головну сторінку</a>.
+</p>
+<hr>
+
+<!-- Складна таблиця: cellspacing — відступ між клітинками, cellpadding — відступ всередині -->
+<h2>Складна таблиця: Огляд колекцій</h2>
+
+<table border="1" cellspacing="4" cellpadding="10" width="100%">
+
+    <!-- Підпис таблиці -->
+    <caption><b>Каталог колекцій Картинної Галереї</b></caption>
+
+    <!-- colgroup/col: групування колонок; bgcolor задає колір групи -->
+    <colgroup>
+        <col width="20%">
+        <col width="12%" bgcolor="#fff8ee">
+        <col width="12%" bgcolor="#fff8ee">
+        <col width="28%" bgcolor="#fdf3e3">
+        <col width="28%" bgcolor="#fdf3e3">
+    </colgroup>
+
+    <!-- Шапка рядок 1: rowspan="2" — клітинка займає 2 рядки; colspan="2" — займає 2 колонки -->
+    <tr bgcolor="#5c3d2e">
+        <th rowspan="2" valign="middle" align="center">
+            <font color="#e8d5a3">Колекція</font>
+        </th>
+        <th colspan="2" align="center">
+            <font color="#e8d5a3">Хронологія</font>
+        </th>
+        <th colspan="2" align="center">
+            <font color="#e8d5a3">Відомості</font>
+        </th>
+    </tr>
+
+    <!-- Шапка рядок 2: підзаголовки колонок -->
+    <tr bgcolor="#8b6e5a">
+        <th align="center"><font color="#faf7f2">Початок</font></th>
+        <th align="center"><font color="#faf7f2">Кінець</font></th>
+        <th align="center"><font color="#faf7f2">Кількість творів</font></th>
+        <th align="center"><font color="#faf7f2">Статус</font></th>
+    </tr>
+
+    <!-- Рядок 1: вирівнювання по центру через align на <tr> -->
+    <tr align="center">
+        <td>Класики Відродження</td>
+        <td>XV ст.</td>
+        <td>XVII ст.</td>
+        <td>84 картини</td>
+        <td>Постійна</td>
+    </tr>
+
+    <!-- Рядок 2: вирівнювання ліворуч; перша клітинка має rowspan="2" — об'єднує 2 рядки -->
+    <tr align="left">
+        <td rowspan="2" valign="middle" align="center" bgcolor="#fff8ee">
+            <b>Імпресіонізм<br>&#38;<br>Постімпресіонізм</b>
+        </td>
+        <td>1860</td>
+        <td>1886</td>
+        <td>62 картини</td>
+        <td>Постійна</td>
+    </tr>
+
+    <!-- Рядок 3: вирівнювання праворуч; перша клітинка зайнята rowspan вище -->
+    <tr align="right">
+        <td>1886</td>
+        <td>1910</td>
+        <td>43 картини</td>
+        <td>Постійна</td>
+    </tr>
+
+    <!-- Рядок 4: дві останні клітинки об'єднані через colspan="2" -->
+    <tr align="left">
+        <td>Авангард XX ст.</td>
+        <td align="center">1905</td>
+        <td align="center">1970</td>
+        <td colspan="2" align="center" bgcolor="#fff8ee">
+            <i>Тимчасова виставка &#8212; до 31 грудня 2024</i>
+        </td>
+    </tr>
+
+    <!-- Рядок 5: змішане вирівнювання на рівні окремих клітинок -->
+    <tr>
+        <td align="center"><i>Сучасне мистецтво</i></td>
+        <td align="center">1970</td>
+        <td align="center">сьогодні</td>
+        <td align="center">120+ творів</td>
+        <td align="center"><b>Активна</b></td>
+    </tr>
+
+    <!-- Підсумковий рядок: colspan="5" розтягує клітинку на всі колонки -->
+    <tr bgcolor="#e8d5a3">
+        <td colspan="5" align="center">
+            Усього в постійних колекціях: <b>понад 500 творів</b> &nbsp;|&nbsp; Оновлено: грудень 2024
+        </td>
+    </tr>
+
+</table>
+
+<hr>
+<!-- Підвал сторінки -->
+<p><i>&#169; 2024 Картинна Галерея | Шмагайло Марія Євгеніївна</i></p>
+
 </body>
 </html>
